@@ -75,13 +75,13 @@ var appendElements = function(catUl, catName, catLevel, catImage){
 
 
 var app = function(){
-  addCat("atchoum", "50",
+  addCat("Atchoum", "50",
   "https://i.pinimg.com/736x/54/1a/b1/541ab1519d06e3de3049c9b7f1be36d9--hair-day-the-morning.jpg");
   addCat("Stupid cat1", "2",
   "https://images-3662.kxcdn.com/fidelitynews/wp-content/uploads/2018/02/1519392830_5a90183d04b7c.jpg?w=580");
   addCat("Stupid cat2", "4",
   "https://i.chzbgr.com/full/2391045/h3986ABE4/");
-  addCat("Juno", "4,000,000,00",
+  addCat("Juno i.e. BEST CAT EVER", "4,000,000,00",
   "/juno.jpg");
 
 
