@@ -18,13 +18,14 @@ var createCatUl = function(){
 
 var addName = function(name){
   var catName = document.createElement('li');
+  catName.classList.add('name');
   catName.innerText = name;
   return catName;
 }
 
 var addAdorablenessLevel = function(adorablenessLevel){
   var catLevel = document.createElement('li');
-  catLevel.innerText = adorablenessLevel;
+  catLevel.innerText = `Cat adorableness level is: ${adorablenessLevel}`;
   return catLevel;
 }
 
@@ -39,7 +40,7 @@ var addCatImage = function(imageUrl){
 
 var appendElements = function(catUl, catName, catLevel, catImage){
   catUl.appendChild(catName);
-  catUl.appendChild(catLevel;
+  catUl.appendChild(catLevel);
     catUl.appendChild(catImage);
     var catSection = document.getElementById('cats');
     catSection.appendChild(catUl);
@@ -74,7 +75,17 @@ var appendElements = function(catUl, catName, catLevel, catImage){
 
 
 var app = function(){
-  addCat("tara", "50", "/tara.jpg");
+  addCat("atchoum", "50",
+  "https://i.pinimg.com/736x/54/1a/b1/541ab1519d06e3de3049c9b7f1be36d9--hair-day-the-morning.jpg");
+  addCat("Stupid cat1", "2",
+  "https://images-3662.kxcdn.com/fidelitynews/wp-content/uploads/2018/02/1519392830_5a90183d04b7c.jpg?w=580");
+  addCat("Stupid cat2", "4",
+  "https://i.chzbgr.com/full/2391045/h3986ABE4/");
+  addCat("Juno", "4,000,000,00",
+  "/juno.jpg");
+
+
+
 }
 
 window.onload = app;
